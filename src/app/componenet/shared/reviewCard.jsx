@@ -53,12 +53,18 @@ const ReviewCard = () => {
       spaceBetween={20}
       autoplay={{ delay: 3000 }}
       loop={true}
+      breakpoints={{
+        320: { slidesPerView: 1 },   // mobile
+        640: { slidesPerView: 2 },   // small tablets
+        1024: { slidesPerView: 3 },  // laptops
+        1280: { slidesPerView: 3 },  // desktops
+      }}
       className=""
     >
       {reviews.map((reviews, index) => (
         <SwiperSlide
           key={index}
-          className="max-w-[395px] md:max-w-[400px] w-full py-[24px] px-[24px] flex flex-col gap-[12px] border border-gray-300 rounded-2xl"
+          className="max-w-[395px] md:max-w-[400px] w-full py-[24px] px-[24px] flex flex-col gap-[12px] border border-gray-300 rounded-2xl overflow-hidden"
         >
           <Star stars={reviews.rating} />
           <div className="flex items-center gap-2">
