@@ -11,7 +11,7 @@ const HeroSection = () => {
             <p className="text-[14px] md:text-[16px]">
             Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
             </p>
-            <button className="bg-black text-[#f0f0f0] py-[15px] px-[67px] rounded-full md:w-fit"><Link href={""}>Shop Now</Link></button>
+            <Link href={"/shop"} className="bg-black text-[#f0f0f0] py-[15px] px-[67px] rounded-full md:w-fit hover:cursor-pointer">Shop Now</Link>
             <div className="flex gap-[32px] flex-wrap justify-center md:mt-[20px]">
                 <div>
                     <h2 className="text-[26px] md:text-[40px] font-semibold">200+</h2>

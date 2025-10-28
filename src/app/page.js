@@ -6,7 +6,7 @@ import TopSelling from "./componenet/home/topSelling";
 
 export default function Home() {
   return (
-    <div className="pt-[120px]">
+    <div className="pt-[120px] contianer">
       <div className="bg-[#f0f0f0]">
         <HeroSection />
       </div>

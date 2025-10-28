@@ -16,7 +16,7 @@ const Star = ({stars, reviews}) => {
     <div >
         <div className="flex items-center gap-1">
             {ratingStar}
-            <p className="text-[14px] ml-1 font-bold">{stars}{" / "}<span className="font-medium text-gray-500">{reviews}</span></p>
+            <p className={`text-[14px] ml-1 font-bold ${reviews? 'block': 'hidden'}`}>{stars}{" / "}<span className="font-medium text-gray-500">{reviews}</span></p>
         </div>
     </div>
   )

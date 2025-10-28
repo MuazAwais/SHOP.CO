@@ -20,7 +20,7 @@ const SideBar = () => {
         <div className="" onClick={toggleNavbar}>
         <IoMenu size={32}/></div>
         <div className={`fixed top-[40px] left-[-500px] w-3/4 h-lvh rounded-lg bg-[#f0f0f0] ease-in-out duration-300 transition-transform flex-1 ${
-            isOpen ? "translate-x-[490px]" : "translate-x-0"
+            isOpen ? "translate-x-[500px]" : "-translate-x-[80px]"
           } z-60`}>
             <div onClick={closerNavbar}className="flex justify-end p-2 border-b " ><IoMdClose size={24}/></div>
             <ul>
