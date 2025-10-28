@@ -4,10 +4,10 @@ import SideBar from './sideBar';
 
 const Navbar = () => {
   return (
-    <nav className='max-w-[1240px] px-3 mx-auto flex gap-[40px] items-center py-[24px] justify-between'>
+    <nav className='container flex items-center py-[24px] justify-between'>
         <div className='flex gap-[16px] items-center'>
             <div className='md:hidden'>
-                <SideBar/>
+                <SideBar />
             </div>
             <div className='font-inter font-black text-[22px] sm:text-[32px]'>
                 <Link href="/">

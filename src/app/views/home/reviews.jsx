@@ -1,6 +1,6 @@
 
-import ReviewCard from "../shared/reviewCard";
-import Star from "../ui/star";
+import ReviewCard from "../../componenet/shared/reviewCard";
+import Star from "../../componenet/ui/star";
 
 const Reviews = () => {
     

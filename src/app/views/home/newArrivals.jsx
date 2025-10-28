@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import ProductCard from "../ui/productCard";
+import ProductCard from "../../componenet/ui/productCard";
 
 const NewArrivals = () => {
   const products = [

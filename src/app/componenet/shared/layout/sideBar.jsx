@@ -24,8 +24,8 @@ const SideBar = () => {
           } z-60`}>
             <div onClick={closerNavbar}className="flex justify-end p-2 border-b " ><IoMdClose size={24}/></div>
             <ul>
-                <li className="py-3 border-b text-[14px] font-semibold px-3" onClick={closerNavbar}><Link href={""}>Home</Link></li>
-                <li className="py-3 border-b text-[14px] font-semibold px-3" onClick={closerNavbar}><Link href={""}>On Sale</Link></li>
+                <li className="py-3 border-b text-[14px] font-semibold px-3" onClick={closerNavbar}><Link href={"/"}>Home</Link></li>
+                <li className="py-3 border-b text-[14px] font-semibold px-3" onClick={closerNavbar}><Link href={"/shop"}>On Sale</Link></li>
                 <li className="py-3 border-b text-[14px] font-semibold px-3" onClick={closerNavbar}><Link href={""}>New Arrivals</Link></li>
                 <li className="py-3 text-[14px] font-semibold px-3" onClick={closerNavbar}><Link href={""}>Brands</Link></li>
             </ul>

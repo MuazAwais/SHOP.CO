@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ProductCard from "../ui/productCard";
+import ProductCard from "../../componenet/ui/productCard";
 
 const TopSelling = () => {
     const products = [
