@@ -16,7 +16,7 @@ const Home = () => {
       <div className="mt-[50px] md:mt-[72px]">
         <NewArrivals />
       </div>
-      <hr className="max-w-[1240px] mx-auto px-4 md:px-[100px] my-[40px] md:my-[64px] text-gray-400" />
+      <hr className="container my-[40px] md:my-[64px] text-gray-400" />
       <div>
         <TopSelling />
       </div>

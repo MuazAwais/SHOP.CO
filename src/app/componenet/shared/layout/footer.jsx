@@ -8,7 +8,7 @@ import { IoLogoGithub } from "react-icons/io5";
 const Footer = () => {
   return (
     <div className="bg-[#f0f0f0] mt-[200px]">
-      <div className="container relative mx-auto pt-[140px] px-[16px]">
+      <div className="container relative mx-auto pt-[140px]">
         <div className="max-w-[358px] md:max-w-[1240px] mx-auto absolute inset-x-0 md:left-0 -top-[180px] md:-top-[100px] w-full">
           <Register />
         </div>
