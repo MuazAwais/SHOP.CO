@@ -9,10 +9,10 @@ const Footer = () => {
   return (
     <div className="bg-[#f0f0f0] mt-[200px]">
       <div className="container relative mx-auto pt-[140px]">
-        <div className="max-w-[358px] md:max-w-[1240px] mx-auto absolute inset-x-0 md:left-0 -top-[180px] md:-top-[100px] w-full">
+        <div className="max-w-[358px] md:max-w-[1240px] mx-auto absolute inset-x-0  -top-[180px] md:-top-[100px] w-full">
           <Register />
         </div>
-        <div className="max-w-[1240px] mx-auto">
+        <div className="">
           <div className="flex gap-x-[113px] gap-y-[40px] flex-col md:flex-row mx-auto">
             <div className="md:max-w-[248px] flex flex-col gap-[10px] md:gap-[25px]">
               <h2 className="font-inter font-black text-[28px] md:text-[33.5px]">

@@ -54,8 +54,9 @@ const ProductPage = () => {
     }
   
     localStorage.setItem("cart", JSON.stringify(existingCart));
-  
-    console.log("Cart updated:", existingCart);
+    window.dispatchEvent(new Event('cartUpdated'));
+    setSelectedSize("")
+    setQuantity(1)
   };
   return (
     <div className="pt-[150px] container min-h-screen">
@@ -145,7 +146,7 @@ const ProductPage = () => {
             <div className="border-t border-gray-200 mt-4"></div>
             <div className="flex gap-x-[20px]">
               <div className="px-[20px] py-[14px] flex items-center bg-gray-200 rounded-full max-w-[170px] justify-between w-full ">
-                <div onClick={() => handleQuantityChange(-1)}>
+                <div onClick={() => handleQuantityChange(-1)} className="hover:cursor-pointer">
                   <FiMinus />
                 </div>
                 <input
@@ -162,7 +163,7 @@ const ProductPage = () => {
                     padding: "6px",
                   }}
                 />
-                <div onClick={() => handleQuantityChange(+1)}>
+                <div onClick={() => handleQuantityChange(+1)} className="hover:cursor-pointer">
                   <FaPlus />
                 </div>
               </div>
