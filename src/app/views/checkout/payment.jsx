@@ -46,7 +46,6 @@ const PaymentCard = () => {
       <div className="w-full max-w-md mx-auto border-2 rounded-xl p-8 bg-white mt-10">
       <form onSubmit={formik.handleSubmit}>
         <h2 className="font-inter font-bold mb-6 text-[24px]">Payment Detail</h2>
-        {/* Name on Card */}
         <div className="mb-4">
           <label htmlFor="nameOnCard" className="block text-gray-400">Name on Card</label>
           <input
@@ -62,7 +61,6 @@ const PaymentCard = () => {
             <div className="text-red-600 text-xs mt-1">{formik.errors.nameOnCard}</div>
           ) : null}
         </div>
-        {/* Card Number */}
         <div className="mb-4">
           <label htmlFor="cardNumber" className="block text-gray-400">Card Number</label>
           <input
@@ -93,7 +91,6 @@ const PaymentCard = () => {
               value={formik.values.month}
               maxLength={2}
             />
-            {/* Add validation message if desired */}
           </div>
           <div className="w-1/2">
             <label htmlFor="year" className="block text-gray-400">Year</label>
@@ -108,10 +105,8 @@ const PaymentCard = () => {
               value={formik.values.year}
               maxLength={2}
             />
-            {/* Add validation message if desired */}
           </div>
         </div>
-        {/* CVV */}
         <div className="mb-4">
           <label htmlFor="cvv" className="block text-gray-400 ">CVV</label>
           <input

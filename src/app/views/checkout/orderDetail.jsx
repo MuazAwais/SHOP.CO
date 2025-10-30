@@ -176,8 +176,6 @@ const OrderDetail = () => {
             </div>
           ) : null}
         </div>
-
-        {/* Cart Summary */}
         <div className="border-b-2 my-6"></div>
         <h3 className="text-xl font-bold mb-4">Order Summary</h3>
         <div className="mb-2 text-gray-700">
