@@ -5,7 +5,7 @@ import OrderDetail from './orderDetail'
 const CheckoutView = () => {
   return (
     <div>
-        <div className="flex gap-[20px]">
+        <div className="flex gap-[20px] flex-col md:flex-row">
         <div className="w-full">
         <PaymentCard />
         </div>

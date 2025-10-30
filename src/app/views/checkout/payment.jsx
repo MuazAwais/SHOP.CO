@@ -1,9 +1,11 @@
 'use client'
 
 import { useFormik } from "formik"
+import { useState } from "react";
 import * as Yup from 'yup';
 
 const PaymentCard = () => {
+  const [paid, setPaid] = useState(false)
     const validationSchema = Yup.object().shape({
         nameOnCard : Yup.string()
         .min(4, 'Too short!')
@@ -28,8 +30,17 @@ const PaymentCard = () => {
         onSubmit: (values, {resetForm}) => {
         localStorage.setItem("Payment Details",JSON.stringify(values, null, 2));  
         resetForm();    
+        setPaid(true)
         } 
     })
+    if (paid) {
+      return (
+        <div className="max-w-md mx-auto mt-10 border rounded-xl p-8 bg-white text-center">
+          <h2 className="text-2xl font-bold mb-4">Payment Successful</h2>
+          <div className="my-4 text-gray-500">Thank you for your purchase.</div>
+        </div>
+      );
+    }
   return (
     <div>
       <div className="w-full max-w-md mx-auto border-2 rounded-xl p-8 bg-white mt-10">

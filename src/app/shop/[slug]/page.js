@@ -83,11 +83,11 @@ const ProductPage = () => {
           </div>
 
           {/* Main Image */}
-          <div className="flex-1 bg-gray-100 rounded-2xl overflow-hidden max-h-[450px]">
+          <div className="flex-1 bg-gray-100 rounded-2xl overflow-hidden h-[450px]">
             <img
               src={product?.images[selectedImage]}
               alt={product.name}
-              className="w-full object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>
@@ -132,7 +132,7 @@ const ProductPage = () => {
                 <div key={index}>
                   <div
                     onClick={() => setSelectedSize(size)}
-                    className={`text-[14px] md:text-[16px] px-[20px] py-[10px] md:px-[24px] md:py-[12px] bg-[#f0f0f0] hover:bg-[#0000009c] rounded-full ${
+                    className={`text-[12px] md:text-[16px] px-[20px] py-[10px] md:px-[24px] md:py-[12px] bg-[#f0f0f0] hover:bg-[#0000009c] rounded-full ${
                       selectedSize === size
                         ? "text-white bg-black"
                         : "text-gray-400"
@@ -145,7 +145,7 @@ const ProductPage = () => {
             </div>
             <div className="border-t border-gray-200 mt-4"></div>
             <div className="flex gap-x-[20px]">
-              <div className="px-[20px] py-[14px] flex items-center bg-gray-200 rounded-full max-w-[170px] justify-between w-full ">
+              <div className="px-[20px] py-[14px] flex items-center bg-gray-200 rounded-full max-w-[110px] md:max-w-[170px] justify-between w-full ">
                 <div onClick={() => handleQuantityChange(-1)} className="hover:cursor-pointer">
                   <FiMinus />
                 </div>
@@ -156,11 +156,11 @@ const ProductPage = () => {
                   onChange={(e) =>
                     setQuantity(Math.max(1, Number(e.target.value)))
                   }
-                  className="bg-gray-200"
+                  className="bg-gray-200 font-bold"
                   style={{
-                    width: "60px",
+                    width: "40px",
                     textAlign: "center",
-                    padding: "6px",
+                    padding: "2px",
                   }}
                 />
                 <div onClick={() => handleQuantityChange(+1)} className="hover:cursor-pointer">
@@ -179,8 +179,8 @@ const ProductPage = () => {
       </div>
       <hr className="my-8"/>
       <div>
-        <h3 className="uppercase font-inter font-black text-[32px] md:text-[48px] text-center">You might also like</h3>
-        <div className="">
+        <h3 className="uppercase font-inter font-black text-[32px] md:text-[48px] md:text-center">You might also like</h3>
+        <div className="flex justify-center mt-8">
           <ProductCard productsData={menClothingData?.slice(0, 4)}/>
         </div>
       </div>
