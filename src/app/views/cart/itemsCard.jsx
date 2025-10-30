@@ -42,33 +42,8 @@ const ItemsCard = ({ cartData }) => {
               <div className="text-[20px] md:text-[24px] font-inter font-black">
                 ${data?.price}
               </div>
-              <div className="px-[20px] py-[10px] flex items-center bg-gray-200 rounded-full max-w-[126px] justify-between w-full ">
-                <div
-                  onClick={() => handleQuantityChange(-1)}
-                  className="hover:cursor-pointer"
-                >
-                  <FiMinus />
-                </div>
-                <input
-                  type="number"
-                  value={data?.quantity}
-                  min={1}
-                  onChange={(e) =>
-                    setQuantity(Math.max(1, Number(e.target.value)))
-                  }
-                  className="bg-gray-200"
-                  style={{
-                    width: "60px",
-                    textAlign: "center",
-                    padding: "6px",
-                  }}
-                />
-                <div
-                  onClick={() => handleQuantityChange(+1)}
-                  className="hover:cursor-pointer"
-                >
-                  <FaPlus />
-                </div>
+              <div className="flex items-center text-gray-400 ">
+                Quantity :{" "}<span className="text-black">{data?.quantity}</span>
               </div>
             </div>
           </div>

@@ -18,7 +18,7 @@ const Footer = () => {
               <h2 className="font-inter font-black text-[28px] md:text-[33.5px]">
                 SHOP.CO
               </h2>
-              <p className="text-[14px]">
+              <p className="text-[14px] text-gray-400">
                 We have clothes that suits your style and which you’re proud to
                 wear. From women to men.
               </p>
@@ -54,7 +54,7 @@ const Footer = () => {
                 <h4 className="font-black text-[14px] md:text-[16px] uppercase tracking-widest">
                   Company
                 </h4>
-                <div className="flex flex-col gap-[8px] text-[14px] md:text-[16px]">
+                <div className="flex flex-col gap-[8px] text-[14px] md:text-[16px] text-gray-400">
                   <Link href={"/construction"}>About</Link>
                   <Link href={"/construction"}>Features</Link>
                   <Link href={"/construction"}>Works</Link>
@@ -65,7 +65,7 @@ const Footer = () => {
                 <h4 className="font-black text-[14px] md:text-[16px] uppercase tracking-widest">
                   HELP
                 </h4>
-                <div className="flex flex-col gap-[8px] text-[14px] md:text-[16px]">
+                <div className="flex flex-col gap-[8px] text-[14px] md:text-[16px] text-gray-400">
                   <Link href={"/construction"}>Customer Support</Link>
                   <Link href={"/construction"}>Delivery Detail</Link>
                   <Link href={"/construction"}>Terms & Conditions</Link>
@@ -76,7 +76,7 @@ const Footer = () => {
                 <h4 className="font-black text-[14px] md:text-[16px] uppercase tracking-widest">
                   FAQ
                 </h4>
-                <div className="flex flex-col gap-[8px] text-[14px] md:text-[16px]">
+                <div className="flex flex-col gap-[8px] text-[14px] md:text-[16px] text-gray-400">
                   <Link href={"/construction"}>Account</Link>
                   <Link href={"/construction"}>Manage Deliveries</Link>
                   <Link href={"/construction"}>Orders</Link>
@@ -87,7 +87,7 @@ const Footer = () => {
                 <h4 className="font-black text-[14px] md:text-[16px] uppercase tracking-widest">
                   Resources
                 </h4>
-                <div className="flex flex-col gap-[8px] text-[14px] md:text-[16px]">
+                <div className="flex flex-col gap-[8px] text-[14px] md:text-[16px] text-gray-400">
                   <Link href={"/construction"}>Free eBooks</Link>
                   <Link href={"/construction"}>Development Tutorial</Link>
                   <Link href={"/construction"}>How to-Blog</Link>

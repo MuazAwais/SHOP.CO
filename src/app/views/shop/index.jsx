@@ -6,8 +6,8 @@ const ShopView = () => {
     const products = menClothingData
   return (
     <div>
-      <h2 className="font-black text-[24px] md:text-[32px] ">Casual</h2>
-      <div className="mt-6">
+      <h2 className="font-black font-inter text-[24px] md:text-[32px] ">Casual</h2>
+      <div className="mt-6 flex justify-center">
         <ProductCard productsData={products} />
       </div>
     </div>
