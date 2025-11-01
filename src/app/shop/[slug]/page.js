@@ -132,7 +132,7 @@ const ProductPage = () => {
                 <div key={index}>
                   <div
                     onClick={() => setSelectedSize(size)}
-                    className={`text-[12px] md:text-[16px] px-[20px] py-[10px] md:px-[24px] md:py-[12px] bg-[#f0f0f0] hover:bg-[#0000009c] rounded-full ${
+                    className={`text-[12px] md:text-[16px] px-[20px] py-[10px] md:px-[24px] md:py-[12px] bg-[#f0f0f0] hover:bg-[#000000d5] hover:text-white rounded-full hover:cursor-pointer transition-all duration-300 ease-in-out ${
                       selectedSize === size
                         ? "text-white bg-black"
                         : "text-gray-400"
@@ -168,7 +168,7 @@ const ProductPage = () => {
                 </div>
               </div>
               <button
-                className="text-white bg-black rounded-full max-w-[400px] w-full hover:bg-slate-900"
+                className="text-white bg-black rounded-full max-w-[400px] w-full hover:bg-inherit hover:text-black hover:border-black hover:border transition-all duration-300 ease-in-out"
                 onClick={handleAddToCart}
               >
                 Add to Cart

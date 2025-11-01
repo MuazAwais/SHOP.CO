@@ -125,7 +125,7 @@ const PaymentCard = () => {
         </div>
         <button
           type="submit"
-          className="w-full bg-gray-950 text-white py-2 px-4 rounded-full hover:bg-gray-900"
+          className="w-full bg-gray-950 text-white py-2 px-4 rounded-full hover:bg-white hover:text-black hover:border-black hover:border transition-all duration-300 ease-in-out"
         >
           Pay Now
         </button>

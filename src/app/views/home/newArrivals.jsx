@@ -11,7 +11,7 @@ const NewArrivals = () => {
         New Arrivals
       </h2>
       <ProductCard productsData={products}/>
-      <Link href="/shop" className="px-[80px] py-[15px] border border-gray-400 rounded-full sm:w-fit">View All</Link>
+      <Link href="/shop" className="px-[80px] py-[15px] border border-gray-400 rounded-full sm:w-fit hover:bg-black hover:text-white">View All</Link>
     </div>
   );
 };

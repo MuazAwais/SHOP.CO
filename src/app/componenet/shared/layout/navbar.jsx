@@ -18,10 +18,10 @@ const Navbar = () => {
         </div>
         <div className='hidden md:flex'>
             <ul className='flex items-center gap-[24px] w-full'>
-                <li><Link href={'/'}>Home</Link></li>
-                <li><Link href={'/shop'}>On Sale</Link></li>
-                <li><Link href={'/construction'}>New Arrivals</Link></li>
-                <li><Link href={'/construction'}>Brands</Link></li>
+                <li className='hover:font-bold'><Link href={'/'}>Home</Link></li>
+                <li className='hover:font-bold'><Link href={'/shop'}>On Sale</Link></li>
+                <li className='hover:font-bold'><Link href={'/construction'}>New Arrivals</Link></li>
+                <li className='hover:font-bold'><Link href={'/construction'}>Brands</Link></li>
             </ul>
         </div>
 

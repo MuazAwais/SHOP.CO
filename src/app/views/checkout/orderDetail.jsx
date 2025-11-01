@@ -209,7 +209,7 @@ const OrderDetail = () => {
 
         <button
           type="submit"
-          className="mt-6 w-full bg-gray-950 text-white py-3 rounded-full font-semibold hover:bg-gray-900 transition"
+          className="mt-6 w-full bg-gray-950 text-white py-3 rounded-full font-semibold hover:bg-white hover:text-black hover:border-black hover:border transition-all duration-300 ease-in-out"
           disabled={cart.length === 0}
         >
           Place Order

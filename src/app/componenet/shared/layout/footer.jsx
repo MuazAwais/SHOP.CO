@@ -13,8 +13,8 @@ const Footer = () => {
           <Register />
         </div>
         <div className="">
-          <div className="flex gap-x-[113px] gap-y-[40px] flex-col md:flex-row mx-auto">
-            <div className="md:max-w-[248px] flex flex-col gap-[10px] md:gap-[25px]">
+          <div className="flex gap-x-[100px] gap-y-[40px] flex-col lg:flex-row mx-auto">
+            <div className="lg:max-w-[248px] flex flex-col gap-[10px] md:gap-[25px]">
               <h2 className="font-inter font-black text-[28px] md:text-[33.5px]">
                 SHOP.CO
               </h2>
@@ -49,49 +49,49 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex md:gap-[113px] gap-x-[69px] gap-y-[24px] flex-wrap justify-between">
-              <div className="flex flex-col gap-[16px]">
+            <div className="flex md:gap-[100px] gap-x-[50px] gap-y-[24px] flex-wrap justify-between w-full">
+              <div className="flex flex-col gap-[16px] max-w-[149px] w-full">
                 <h4 className="font-black text-[14px] md:text-[16px] uppercase tracking-widest">
                   Company
                 </h4>
                 <div className="flex flex-col gap-[8px] text-[14px] md:text-[16px] text-gray-400">
-                  <Link href={"/construction"}>About</Link>
-                  <Link href={"/construction"}>Features</Link>
-                  <Link href={"/construction"}>Works</Link>
-                  <Link href={"/construction"}>Career</Link>
+                  <Link href={"/construction"} className="hover:text-black">About</Link>
+                  <Link href={"/construction"} className="hover:text-black">Features</Link>
+                  <Link href={"/construction"} className="hover:text-black">Works</Link>
+                  <Link href={"/construction"} className="hover:text-black">Career</Link>
                 </div>
               </div>
-              <div className="flex flex-col gap-[16px]">
+              <div className="flex flex-col gap-[16px] max-w-[149px] w-full">
                 <h4 className="font-black text-[14px] md:text-[16px] uppercase tracking-widest">
                   HELP
                 </h4>
                 <div className="flex flex-col gap-[8px] text-[14px] md:text-[16px] text-gray-400">
-                  <Link href={"/construction"}>Customer Support</Link>
-                  <Link href={"/construction"}>Delivery Detail</Link>
-                  <Link href={"/construction"}>Terms & Conditions</Link>
-                  <Link href={"/construction"}>Privacy Policy</Link>
+                  <Link href={"/construction"} className="hover:text-black">Customer Support</Link>
+                  <Link href={"/construction"} className="hover:text-black">Delivery Detail</Link>
+                  <Link href={"/construction"} className="hover:text-black">Terms & Conditions</Link>
+                  <Link href={"/construction"} className="hover:text-black">Privacy Policy</Link>
                 </div>
               </div>
-              <div className="flex flex-col gap-[16px]">
+              <div className="flex flex-col gap-[16px] max-w-[149px] w-full">
                 <h4 className="font-black text-[14px] md:text-[16px] uppercase tracking-widest">
                   FAQ
                 </h4>
                 <div className="flex flex-col gap-[8px] text-[14px] md:text-[16px] text-gray-400">
-                  <Link href={"/construction"}>Account</Link>
-                  <Link href={"/construction"}>Manage Deliveries</Link>
-                  <Link href={"/construction"}>Orders</Link>
-                  <Link href={"/construction"}>Payments</Link>
+                  <Link href={"/construction"} className="hover:text-black">Account</Link>
+                  <Link href={"/construction"} className="hover:text-black">Manage Deliveries</Link>
+                  <Link href={"/construction"} className="hover:text-black">Orders</Link>
+                  <Link href={"/construction"} className="hover:text-black">Payments</Link>
                 </div>
               </div>
-              <div className="flex flex-col gap-[16px]">
+              <div className="flex flex-col gap-[16px] max-w-[149px] w-full">
                 <h4 className="font-black text-[14px] md:text-[16px] uppercase tracking-widest">
                   Resources
                 </h4>
                 <div className="flex flex-col gap-[8px] text-[14px] md:text-[16px] text-gray-400">
-                  <Link href={"/construction"}>Free eBooks</Link>
-                  <Link href={"/construction"}>Development Tutorial</Link>
-                  <Link href={"/construction"}>How to-Blog</Link>
-                  <Link href={"/construction"}>Youtube Playlist</Link>
+                  <Link href={"/construction"} className="hover:text-black">Free eBooks</Link>
+                  <Link href={"/construction"} className="hover:text-black">Development Tutorial</Link>
+                  <Link href={"/construction"} className="hover:text-black">How to-Blog</Link>
+                  <Link href={"/construction"} className="hover:text-black">Youtube Playlist</Link>
                 </div>
               </div>
             </div>
