@@ -3,6 +3,8 @@ import Link from "next/link";
 import ProductCard from "../../componenet/ui/productCard";
 import { menClothingData } from "@/app/componenet/data/data";
 
+
+
 const NewArrivals = () => {
   const products = menClothingData.slice(0,4)
   return (

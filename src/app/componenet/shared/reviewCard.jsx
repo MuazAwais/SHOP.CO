@@ -66,7 +66,7 @@ const ReviewCard = () => {
           key={index}
           className="max-w-[395px] md:max-w-[400px] w-full py-[24px] px-[24px] flex flex-col gap-[12px] border border-gray-300 rounded-2xl overflow-hidden"
         >
-          <Star stars={reviews.rating} />
+          <Star stars={reviews?.rating} />
           <div className="flex items-center gap-2">
             <h4 className="text-[16px] md:text-[20px] font-black">
               {reviews?.name}

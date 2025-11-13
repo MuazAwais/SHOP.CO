@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { LuShoppingCart } from "react-icons/lu";
 import SideBar from './sideBar';
 import CartLogo from '../../ui/cartLogo';
 
